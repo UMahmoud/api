@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSANGAYAR MALAM BALA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>TSANGAYAR MALAM BALA</h2>
+        <h4><p>Address: Dakata Quarters, Nassarawa Local Government, Kano State
+            <p>Phone : 08057222158 09049385842</h4>
+        <form id="myForm">
+            <div class="form-group">
+                <label for="hoto">Hoto</label>
+                <input type="file" id="hoto" name="hoto" required>
+            </div>
+            <div class="form-group">
+                <label for="suna">Suna</label>
+                <input type="text" id="suna" name="suna" placeholder="Rubuta Sunanka" required>
+            </div>
+            <div class="form-group">
+                <label for="sunanMahaifi">Sunan Mahaifi</label>
+                <input type="text" id="sunanMahaifi" name="sunanMahaifi" placeholder="Rubuta Sunan Mahaifinka" required>
+            </div>
+            <div class="form-group">
+                <label for="cikakkenAdreshi">Cikakken Adreshi</label>
+                <textarea id="cikakkenAdreshi" name="cikakkenAdreshi" placeholder="Rubuta Cikakken Adreshinka" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="lambarWaya">Lambar Waya</label>
+                <input type="tel" id="lambarWaya" name="lambarWaya" placeholder="Rubuta Lambar Waya">
+            </div>
+            <div class="form-group">
+                <label for="sanaa">Sana'a</label>
+                <input type="text" id="sanaa" name="sanaa" placeholder="Menene Sana'arka" required>
+            </div>
+            <div class="form-group">
+                <label for="matsayinAure">Matsayin Aure</label>
+                <select id="matsayinAure" name="matsayinAure" required>
+                    <option value="">Danna Ka Zaba</option>
+                    <option value="InaDaAure">Eh, Ina da Aure</option>
+                    <option value="BaniDaAure">Aa, Bani da Aure</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="shekarunHaihuwa">Shekarun Haihuwa</label>
+                <input type="date" id="shekarunHaihuwa" name="shekarunHaihuwa" class="date-picker" placeholder="Zabi Shekarun Haihuwarka" required>
+            </div>           
+            <div class="form-group">
+                <label for="lokacinKaratu">Lokacin Karatu</label>
+                <fieldset id="lokacinKaratu" name="lokacinKaratuFieldset" required>
+                    <legend>Zabi Daya ko Sama da Hakan:</legend>
+                    <div class="checkbox-group">
+                        <label for="asuba">
+                            <input type="checkbox" id="asuba" name="lokacinKaratu" value="asuba">
+                            <span class="checkbox-custom"></span>
+                            Asuba
+                        </label>
+                    </div>
+                    <div class="checkbox-group">
+                        <label for="rana">
+                            <input type="checkbox" id="rana" name="lokacinKaratu" value="rana">
+                            <span class="checkbox-custom"></span>
+                            Rana
+                        </label>
+                    </div>
+                    <div class="checkbox-group">
+                        <label for="yamma">
+                            <input type="checkbox" id="yamma" name="lokacinKaratu" value="yamma">
+                            <span class="checkbox-custom"></span>
+                            Yamma
+                        </label>
+                    </div>
+                    <div class="checkbox-group">
+                        <label for="dare">
+                            <input type="checkbox" id="dare" name="lokacinKaratu" value="dare">
+                            <span class="checkbox-custom"></span>
+                            Dare
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            <!-- <div class="form-group">
+                <label for="takaitaccenBayaninAmincewa">Takaitaccen Bayanin Amincewa</label>
+                <textarea id="takaitaccenBayaninAmincewa" name="takaitaccenBayaninAmincewa" required></textarea>
+            </div> -->
+            <button type="submit" id="submitButton">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        flatpickr("#shekarunHaihuwa", {
+            dateFormat: "Y-m-d",
+            maxDate: "today",
+            // defaultDate: ""
+        });
+    </script>
+    </body>
+</html>
