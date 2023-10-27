@@ -25,7 +25,7 @@ module.exports = async (req, res) => {
     await client.connect();
 
     // Select the MongoDB collection where you want to insert the data
-    const collection = client.db('your-database-name').collection('your-collection-name');
+    const collection = client.db('Mbala').collection('bio_data');
 
     // Create a document with the form data
     const document = {
