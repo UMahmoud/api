@@ -100,5 +100,17 @@
             // defaultDate: ""
         });
     </script>
+    <script>
+        document.getElementById("submitButton").addEventListener("click", function() {
+  // Execute the code in submit.js
+  // Include the path to submit.js if it's in a different directory
+  // For example, if submit.js is in the same directory as this script, you can use:
+  //   fetch("submit.js")
+  fetch("submit.js")
+    .then(response => response.text())
+    .then(code => eval(code))
+    .catch(error => console.error(error));
+});
+        </script>
     </body>
 </html>
