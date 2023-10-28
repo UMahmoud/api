@@ -1,7 +1,8 @@
 {
   "functions": {
     "api": {
-      "handler": "submit.js"
+      "runtime": "nodejs14.x",
+      "memory": 512
     }
   }
 }
