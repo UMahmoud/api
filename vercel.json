@@ -1,7 +1,5 @@
 {
   "functions": {
-    "api": {
-      "src": "submit.js"
-    }
+    "api": {}
   }
 }
