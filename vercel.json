@@ -1,0 +1,11 @@
+{
+    "functions": {
+      "api/submit": {
+        "runtime": "@vercel/node",
+        "environment": {
+          "MONGODB_URI": "mongodb+srv://umid:umid@mbala.mongodb.net/<Mbala>"
+        }
+      }
+    }
+  }
+  
